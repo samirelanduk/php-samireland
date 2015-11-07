@@ -1,0 +1,26 @@
+Blog posts
+
+	Database
+		-ID
+		-Date
+		-Title
+		-Contents as raw HTML (including images) (consistent style though, re images/divs)
+
+	Raw input
+		Word files with consistent layout
+		Images to be markdown-esque (need to know ultimate image name)
+
+
+
+Articles
+
+	Database
+		-ID
+		-Type (Computing, review, article etc.)
+		-Title
+		-Date
+		-Contents as raw HTML
+
+	Raw input
+		Word files with consistent layout
+		Images to be markdown-esque (need to know ultimate image name)

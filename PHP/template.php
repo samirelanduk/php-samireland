@@ -1,14 +1,16 @@
+<?php $root = realpath($_SERVER["DOCUMENT_ROOT"]) ?>
+
 <!doctype html>
 
 <html>
   <head>
-    <?php require "includes/head.html" ?>
+    <?php require $root . "/includes/head.html" ?>
     <title>Home - Sam Ireland</title>
   </head>
 
   <body>
-    <?php require "includes/header.html" ?>
-    <?php require "includes/nav.html" ?>
+    <?php require $root . "/includes/header.html" ?>
+    <?php require $root . "/includes/nav.html" ?>
 
     <main>
     </main>

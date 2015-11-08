@@ -23,6 +23,6 @@ function process_date($mysql_string) {
 
   $date= mktime(0, 0, 0, $day, $month, $year);
 
-  return date("d<\s\u\p>S</\s\u\p> M Y", strtotime($mysql_string));
+  return date("j<\s\u\p>S</\s\u\p> F Y", strtotime($mysql_string));
 }
 ?>

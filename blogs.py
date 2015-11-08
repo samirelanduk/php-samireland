@@ -7,7 +7,7 @@ from config import hostname, username, password, dbname
 current_dir = "/".join(os.path.realpath(__file__).split("/")[:-1])
 posts = []
 os.chdir("%s%sSource%sblog" % (current_dir, os.path.sep, os.path.sep))
-for post in os.listdir("."):
+for post in [f for f in os.listdir(".") if "~" not in f]:
     f = open(post)
     posts.append([l for l in f.readlines() if l.rstrip()])
     f.close()
@@ -19,6 +19,7 @@ posts = [{
     "title": post[1].rstrip(),
     "body": "".join(post[2:]).rstrip()
     } for post in posts]
+print "%i posts here" % len(posts)
 
 
 #Connect to database

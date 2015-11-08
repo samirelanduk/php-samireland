@@ -34,7 +34,7 @@
          mysql_result($result, 0, "date"),
          mysql_result($result, 0, "body"),
          4
-        )
+       );
       ?>
     </main>
 

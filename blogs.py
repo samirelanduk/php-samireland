@@ -23,7 +23,7 @@ print "%i posts here" % len(posts)
 
 
 #Connect to database
-conn = mdb.connect("localhost", "site", "pring000als", "samireland")
+conn = mdb.connect(hostname, username, password, dbname)
 cur = conn.cursor()
 
 

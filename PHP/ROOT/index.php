@@ -19,6 +19,23 @@
         It contains my blog, and anything interesting I might make or do.
       </p>
       <p>Have a look around!</p>
+
+      <h2>Latest News</h2>
+
+      <?php
+        require $root . "/params.php";
+        require $root . "/blog_display.php";
+        $connection = mysql_connect($hostname, $username, $password);
+        mysql_select_db($database);
+
+        $result = mysql_query("SELECT * FROM blogposts ORDER BY date DESC;");
+        display_blogpost(
+         mysql_result($result, 0, "title"),
+         mysql_result($result, 0, "date"),
+         mysql_result($result, 0, "body"),
+         4
+        )
+      ?>
     </main>
 
     <?php require "includes/footer.html" ?>

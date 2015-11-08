@@ -81,3 +81,23 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.blogpost {
+  margin: 0px 100px 20px 100px;
+  padding: 20px 30px 10px 30px;
+  border-radius: 25px;
+  background-color: #BDEDE6;
+}
+
+.blogpost .title {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.blogpost .date {
+  font-style: italic;
+}
+
+.blogpost p {
+  font-size: 85%;
+}

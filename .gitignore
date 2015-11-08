@@ -3,7 +3,7 @@ PHP/ROOT/params.php
 config.py
 config.pyc
 Source/blog/*~
-*~
+.gitignore~
 
 
 

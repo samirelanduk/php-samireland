@@ -14,7 +14,7 @@
 
     <main>
       <h1>About Sam</h1>
-      <p>I'm a developer/researcher currently living in Edinburgh. Recently graduated from
+      <p>I'm a developer/researcher, currently living in Edinburgh. Recently graduated from
         the University of Edinburgh, and finding graduate life to be not quite as scary as
         foretold.
       </p>

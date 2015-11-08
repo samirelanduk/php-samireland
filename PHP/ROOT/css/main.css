@@ -1,10 +1,11 @@
 html {
   background-color: #EEE;
   font-size: x-large;
+  font-family: 'Roboto Slab';
 }
 
 body {
-  margin: 20px auto 30px auto;
+  margin: 30px auto;
   width: 1100px;
   background-color: #FFF;
 }
@@ -47,8 +48,7 @@ nav a:hover {
 }
 
 main {
-  padding-left: 100px;
-  padding-right: 100px;
+  margin: 50px 100px;
 }
 
 footer {

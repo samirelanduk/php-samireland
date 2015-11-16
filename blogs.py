@@ -4,7 +4,7 @@ import os
 from config import hostname, username, password, dbname
 
 #Go to the directory of blogposts and get posts as text
-current_dir = "/".join(os.path.realpath(__file__).split("/")[:-1])
+current_dir = os.path.sep.join(os.path.realpath(__file__).split("/")[:-1])
 posts = []
 os.chdir("%s%sSource%sblog" % (current_dir, os.path.sep, os.path.sep))
 for post in [f for f in os.listdir(".") if "~" not in f]:

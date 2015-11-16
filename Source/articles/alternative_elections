@@ -1,0 +1,27 @@
+20150619
+
+Alternative Elections
+
+computing
+
+What might have been...
+
+<p>If the real world is too harsh and discomforting, there''s good news. Now you can visit an alternate reality where the UK electorate voted the way <em>you</em> wanted them to. <a href="../../election">Just click here!</a></p>
+<div class="image">
+<img width="597" height="661" src="map.png">
+Very much not an endorsement of such an outcome!
+</div>
+<h2>The App</h2>
+<p>So, how does this work?</p>
+<p>All the voting data for the UK 2015 election is freely available. I got the data from the BBC website – for each constituency, my Python script went to that page on the BBC website, grabbed the details of how many people voted for which party in that constituency, and saved it all to a fairly large <a href="../../election/votes.json">JSON file</a>.</p>
+<p>This database is loaded with the page. When the ‘apply'' button is pressed, the JavaScript... script will go through each and every constituency and apply the specified rule... if it can. If the rule says to transfer 40% of the Labour vote to the Liberal Democrats, it will only do so if both Labour and the Lib Dems stood in that constituency. Each time the button is pushed, the data is reset.</p>
+<p>From there, reporting the seat changes is fairly straightforward – all of the constituencies are iterated through once again, and the winner in each case determined.</p>
+<p>The real beauty of this app however, is the big colourful map. Everyone likes big colourful maps, and I''m no different. Assuming you are not using Internet Explorer (my condolences if you are), the map of all 650 constituencies will <em>also</em> change colour depending on how the vote has changed – so you can see where the seats that change hands are.</p>
+<p>All in all, it''s surprisingly addictive, even if I do say so myself.</p>
+<h2>Backstory</h2>
+<p>The idea for this came to me a few days after the election was done. I had no idea if there was anything like this out there, and I''m of the opinion that if you think you <em>can</em> make something, you should never check if someone already has. It would only put you off (unless you''re making it solely for functional purposes of course).</p>
+<p>Finding the map was the first step. I used the one that Wikipedia uses, an SVG map of the UK constituencies, and edited it slightly so that the Shetlands appeared. This was my first taste of editing SVG files, and given its fairly huge size it would have been impossible without the Python XML parser BeautifulSoup.</p>
+<p>The colour change is achieved by simply changing the class name of each individual g element in the SVG but, to my frustration, I was unable to get this to work in mobile browsers. In the end I had to give up and simply prevent the map from loading on mobile. To be fair, it''s a huge map so that might be for the best.</p>
+<p>The graphs and charts were an afterthought, but they turned out quite well and, unlike the SVG map, work every time – which is nice. The bar charts are just coloured divs of variable width, and the animated pie charts are made with CanvasJS.</p>
+<p>In the end, I spent almost as much time trying to get the thing to display properly in Internet Explorer as I did on everything else combined – a feature of web development which I had heard about but never had the pleasure of experiencing myself until now. Even now the SVG elements don''t change colour as they are supposed to, but life is just too short to carry on fiddling with it. If you know how to fix it – let me know.</p>
+	

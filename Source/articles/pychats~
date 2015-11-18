@@ -1,0 +1,51 @@
+20150803
+
+PyChats
+
+computing
+
+Simulate your friends.
+
+<p>Maintaining friendships is hard. And, like all hard things, there''s now an automated computer program that means you don''t have to do it.</p>
+<div class="image">
+<img src="sadkeys.jpg" title="Use at your own risk" width="624" height="375">
+You don''t need friends, your computer will be your friend...
+</div>
+<p>Long-time fans of the global enterprise that is samireland.com will recall that <a href="../messages">in April</a> I wrote about some analytics scripts of mine for tracking how your interactions with your friends change over time. It was pretty cool, even if I do say so myself.</p>
+<p>But, it was very much a first draft. And it wasn''t exactly user-friendly – it had my own details hard-coded into it for God''s sake. So, I have decided to release it as a proper Python library – PyChats.</p>
+<p>While the current version 1.0.2 lacks some of the features of the original (for now – watch this space), it does have an exciting new feature. It is now able to generate a brand-new message for any given contact, based on the content of the previous messages.</p>
+<p>PyChats can now simulate your friends.</p>
+<p>It works by using Markov chains – a neat little trick with many, many applications, including the very cool <a href="http://reddit.com/r/subredditsimulator">SubredditSimulator</a> over on reddit. The mathematics are not important here, but essentially it generates a word, looks at what word often follows that word, and so on.</p>
+<p>The results are usually bizarre, sometimes hilarious, and occasionally downright spooky.</p>
+<div class="image">
+<img src="chats.png" rel="image_src" style="border-radius: 0px;">
+Spookiness removed for your viewing convenience
+</div>
+<p>As I said, pychats currently lacks some of the features of the first attempt – it only works on Facebook backups, and the output options are much more limited – but all of those will be added back in for versions 1.1 and 1.2. In every other way it is a major improvement, most markedly in readability, usability and speed.
+<h2>Documentation</h2>
+<p>At time of writing there is no official documentation written – a job for the coming days and weeks. But if you''re eager to use it, it''s quite simple.</p>
+<h3>Installation</h3>
+<p>PyChats is hosted on PyPI, and so can be easily installed using:
+<div class="code">
+<div class="codeline">pip install pychats</div>
+</div>
+</p>
+<p>The only dependency is currently BeautifulSoup, though Matplotlib will be required in future versions.</p>
+<h3>Use</h3>
+<p>You''ll need the messages.htm file provided in the <a href="https://www.facebook.com/settings">Facebook Archive</a> that Facebook lets you download for your own account. Once you have it:</p>
+<div class="code">
+<div class="codeline">>>> import pychats</div>
+<div class="codeline">>>> f = open("messages.htm", "rb")</div>
+<div class="codeline">>>> backup = pychats.get_facebook_backup(f, my_name="Hermione Granger")</div>
+<div class="codeline">>>> backup.contacts[0].name</div>
+<div class="codeline">''Neville Longbottom''</div>
+<div class="codeline">>>> ron = backup.get_contact_by_name("Ron Weasley")</div>
+<div class="codeline">>>> ron.messages[-1].text</div>
+<div class="codeline">''OK, bye!''</div>
+<div class="codeline">>>> ron.messages[-1].time</div>
+<div class="codeline">datetime.datetime(2015, 7, 31, 15, 5, 1)</div>
+<div class="codeline">>>> ron.generate_message()</div>
+<div class="codeline">#Hilarious Ron-like message</div>
+</div>
+<p>As always, source code is available <a href="http://github.com/samirelanduk/pychats">on GitHub</a>.</p>
+

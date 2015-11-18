@@ -14,7 +14,9 @@ for article in [f for f in os.listdir(".") if "~" not in f]:
 
 
 #Process the articles
+chars = "abcdefghijklmnopqrstuvwxyz "
 articles = [{
+    "url": "".join([char for char in article[1].rstrip().lower() if char in chars]).replace(" ", "-"),
     "date": "-".join([article[0][:4], article[0][4:6], article[0][6:]]).rstrip(),
     "title": article[1].rstrip(),
     "type": article[2].strip(),
@@ -30,14 +32,18 @@ cur = conn.cursor()
 
 
 #Delete existing blogarticles table entries
-cur.execute("DELETE FROM articles;")
+cur.execute("DROP TABLE articles;")
 conn.commit()
+cur.execute("create table articles (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, url varchar(255), title varchar(255), date date, type varchar(255), blurb varchar(255), body text);")
+conn.commit()
+
 
 
 #Add articles
 for article in articles:
-    statement = "INSERT INTO articles(title, date, type, blurb, body) VALUES ('%s', '%s', '%s', '%s', '%s');" % \
-                (article["title"],
+    statement = "INSERT INTO articles(url, title, date, type, blurb, body) VALUES ('%s', '%s', '%s', '%s', '%s', '%s');" % \
+                (article["url"],
+                 article["title"],
                  article["date"],
                  article["type"],
                  article["blurb"],

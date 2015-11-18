@@ -24,7 +24,7 @@
 
       <?php
         require $root . "/params.php";
-        require $root . "/blog_display.php";
+        require $root . "/functions.php";
         $connection = mysql_connect($hostname, $username, $password);
         mysql_select_db($database);
 

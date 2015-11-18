@@ -32,20 +32,20 @@ Just imagine it without all the MSPaint splodges hiding the contents.
 <p>After experimenting with the chart-generating library <a href="http://pygal.org/">Pygal</a>, and finding it not quite adequate for what I wanted to do, I eventually settled on the frankly excellent <a href="http://matplotlib.org/">Matplotlib</a> to make the SVG charts. I''m told it uses Matlab style syntax but since I''ve never used Matlab, I''ll have to take the internet''s word for that.</p>
 <p>At present, each log begins with a pie chart showing the relative contributions of SMS, WhatsApp and Facebook to the contents of that log. Here, as in all the charts, the crucial measure used is <em>characters</em> sent, not messages sent. I thought this was a much more meaningful measure of the level of communication between two people – not least because of the fact that different people break their messages up into multiple messages by differing amounts.</p>
 <div class="image">
-<img src="pie.png" width="362" height="278">
+<img src="/images/pie.png" width="362" height="278">
 </div>
 <p>Then the meaty stuff. The next two charts are characters sent per day (a bar chart), and a 30-day moving average of this data (a line chart). All messages are counted - sent and received.</p>
 <div class="image">
-<img src="days.png" width="723" height="274">
+<img src="/images/days.png" width="723" height="274">
 </div>
 <p>This is repeated on the month level next – characters sent per month, and a 3-month moving average.</p>
 <div class="image">
-<img src="months.png" width="735"" height="271">
+<img src="/images/months.png" width="735"" height="271">
 </div>
 <p>There''s something strangely beautiful about watching your interactions with someone rise and fall (preferably the former) over the years though empirical evidence suggests I am rather in a minority there.</p>
 <p>And if that isn''t enough - you can even compare two people...</p>
 <div class="image">
-<img src="comparison.png" width="662" height="349">
+<img src="/images/comparison.png" width="662" height="349">
 </div>
 <h2>Mission Accomplished</h2>
 <p>This project has been enormously well received. My friends have gushed praise over it...</p>

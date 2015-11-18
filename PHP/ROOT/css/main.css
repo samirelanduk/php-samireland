@@ -96,8 +96,27 @@ a:hover {
 
 .blogpost .date {
   font-style: italic;
+  color: #900;
 }
 
 .blogpost p {
   font-size: 85%;
+}
+
+.article_link {
+  margin-left: 40px;
+  margin-bottom: 75px;
+}
+
+.article_link h2 {
+  margin-bottom: 5px;
+}
+
+.date {
+  color: #999;
+}
+
+.article_link .blurb {
+  margin-top: 20px;
+  font-style: italic;
 }

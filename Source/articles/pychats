@@ -8,7 +8,7 @@ Simulate your friends.
 
 <p>Maintaining friendships is hard. And, like all hard things, there''s now an automated computer program that means you don''t have to do it.</p>
 <div class="image">
-<img src="sadkeys.jpg" title="Use at your own risk" width="624" height="375">
+<img src="/images/sadkeys.jpg" title="Use at your own risk" width="624" height="375">
 You don''t need friends, your computer will be your friend...
 </div>
 <p>Long-time fans of the global enterprise that is samireland.com will recall that <a href="../messages">in April</a> I wrote about some analytics scripts of mine for tracking how your interactions with your friends change over time. It was pretty cool, even if I do say so myself.</p>
@@ -18,7 +18,7 @@ You don''t need friends, your computer will be your friend...
 <p>It works by using Markov chains – a neat little trick with many, many applications, including the very cool <a href="http://reddit.com/r/subredditsimulator">SubredditSimulator</a> over on reddit. The mathematics are not important here, but essentially it generates a word, looks at what word often follows that word, and so on.</p>
 <p>The results are usually bizarre, sometimes hilarious, and occasionally downright spooky.</p>
 <div class="image">
-<img src="chats.png" rel="image_src" style="border-radius: 0px;">
+<img src="/images/chats.png" rel="image_src" style="border-radius: 0px;">
 Spookiness removed for your viewing convenience
 </div>
 <p>As I said, pychats currently lacks some of the features of the first attempt – it only works on Facebook backups, and the output options are much more limited – but all of those will be added back in for versions 1.1 and 1.2. In every other way it is a major improvement, most markedly in readability, usability and speed.

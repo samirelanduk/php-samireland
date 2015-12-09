@@ -31,7 +31,8 @@
 
         echo "\t\t<h1>" . mysql_result($result, 0, "title") . "</h1>";
         echo "\t\t<div class=\"date\">" . process_date(mysql_result($result, 0, "date")) . "</div>";
-        echo mysql_result($result, 0, "body")
+        echo mysql_result($result, 0, "body");
+        mysql_close();
 
       ?>
     </main>

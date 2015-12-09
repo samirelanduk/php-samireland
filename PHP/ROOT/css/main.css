@@ -82,6 +82,10 @@ a:hover {
   text-decoration: underline;
 }
 
+blockquote, q {
+	font-style: italic;
+}
+
 .blogpost {
   margin: 0px 100px 20px 100px;
   padding: 20px 30px 10px 30px;
@@ -119,4 +123,27 @@ a:hover {
 .article_link .blurb {
   margin-top: 20px;
   font-style: italic;
+}
+
+.code {
+	border: 1px solid black;
+	background-color: #000;
+	color: #FFF;
+	border-radius: 10px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 80%;
+	padding: 10px;
+	display: inline-block;
+	line-height: 2;
+}
+
+.code {
+	border: 1px solid black;
+	background-color: #000;
+	color: #FFF;
+	border-radius: 10px;
+	font-size: 80%;
+	padding: 10px;
+	display: inline-block;
+	line-height: 2;
 }

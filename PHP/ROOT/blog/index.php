@@ -31,6 +31,7 @@
            3
          );
         }
+        mysql_close();
       ?>
     </main>
 

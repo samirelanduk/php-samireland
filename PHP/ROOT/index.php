@@ -35,6 +35,7 @@
          mysql_result($result, 0, "body"),
          4
        );
+       mysql_close();
       ?>
     </main>
 

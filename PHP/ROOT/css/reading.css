@@ -1,0 +1,53 @@
+.medium {
+	margin: 60px 0px 80px 0px;
+}
+
+.title {
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.author {
+  margin-top: 0px;
+}
+
+#reviews {
+	margin-left: 100px;
+	margin-top: 50px;
+	font-style: italic;
+}
+
+#author {
+	margin-top: 0px;
+	margin-bottom: 60px;
+	font-size: 110%;
+	color: #8C001A;
+}
+
+#cover {
+  float: right;
+  padding: 0px 20px 20px;
+}
+
+#time {
+  margin-top: 40px;
+  font-style: italic;
+}
+
+#review_nav {
+  text-align: center;
+  margin-top: 75px;
+  font-size: 75%;
+}
+
+#prev_review, #next_review {
+  width: 50%;
+}
+
+#prev_review {
+  margin-right: 20px;
+}
+
+#next_review {
+  margin-left: 20px;
+}

@@ -1,7 +1,7 @@
 import MySQLdb as mdb
 import sys
 import os
-from config import hostname, username, password, dbname
+from config import hostnamel, usernamel, passwordl, dbname
 
 #Go to the directory of blogarticles and get articles as text
 current_dir = os.path.sep.join(os.path.realpath(__file__).split(os.path.sep)[:-1])
@@ -27,7 +27,7 @@ print "%i articles here" % len(articles)
 
 
 #Connect to database
-conn = mdb.connect(hostname, username, password, dbname)
+conn = mdb.connect(hostnamel, usernamel, passwordl, dbname)
 cur = conn.cursor()
 
 

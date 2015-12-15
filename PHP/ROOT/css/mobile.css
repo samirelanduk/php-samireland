@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 768px) {
+
+	body {
+		margin: 0px 0px;;
+		width: 100%;
+		}
+
+	nav {
+		font-size: 90%;
+		}
+
+}

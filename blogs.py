@@ -1,7 +1,7 @@
 import MySQLdb as mdb
 import sys
 import os
-from config import hostname, username, password, dbname
+from config import hostnamel, usernamel, passwordl, dbname, hostnamer, usernamer, passwordr
 
 #Go to the directory of blogposts and get posts as text
 current_dir = os.path.sep.join(os.path.realpath(__file__).split("/")[:-1])
@@ -21,25 +21,32 @@ posts = [{
     } for post in posts]
 print "%i posts here" % len(posts)
 
-
-#Connect to database
-conn = mdb.connect(hostname, username, password, dbname)
-cur = conn.cursor()
-
-
-#Delete existing blogposts table entries
-cur.execute("DELETE FROM blogposts;")
-conn.commit()
+def update_blogs(hostname, username, password, dbname):
+    #Connect to database
+    conn = mdb.connect(hostname, username, password, dbname)
+    cur = conn.cursor()
+    print "\tConnection established..."
 
 
-#Add posts
-for post in posts:
-    statement = "INSERT INTO blogposts(title, date, body) VALUES ('%s', '%s', '%s');" % \
-                (post["title"],
-                 post["date"],
-                 post["body"])
-    cur.execute(statement)
+    #Delete existing blogposts table entries
+    cur.execute("DELETE FROM blogposts;")
     conn.commit()
+    print "\tWiped existing table..."
 
-#Close
-conn.close()
+
+    #Add posts
+    print "\tAdding new entires..."
+    for post in posts:
+        statement = "INSERT INTO blogposts(title, date, body) VALUES ('%s', '%s', '%s');" % \
+                    (post["title"],
+                     post["date"],
+                     post["body"])
+        cur.execute(statement)
+        conn.commit()
+
+    #Close
+    conn.close()
+
+print "Updating local content."
+update_blogs(hostnamel, usernamel, passwordl, dbname)
+

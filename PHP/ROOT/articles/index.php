@@ -27,6 +27,7 @@
         $connection = mysql_connect($hostname, $username, $password);
         mysql_select_db($database);
 
+        $url = mysql_real_escape_string($_GET['id']);
         $result = mysql_query("SELECT * FROM articles WHERE url='$url';");
 
         echo "\t\t<h1>" . mysql_result($result, 0, "title") . "</h1>";

@@ -5,6 +5,4 @@ config.pyc
 Source/blog/*~
 .gitignore~
 Source/articles/*~
-
-
-
+.DS_Store

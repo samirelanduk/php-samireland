@@ -24,7 +24,7 @@
       </p>
       <p>
         Before I came to Edinburgh I lived in Blackpool, which part of me I guess will
-        always call home Before that I lived in a town called Bacup, which you
+        always call home. Before that I lived in a town called Bacup, which you
         haven't heard of.
       </p>
       <p>

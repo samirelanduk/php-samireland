@@ -6,7 +6,7 @@
   <head>
     <?php require $root . "/includes/head.html" ?>
     <link rel="stylesheet" type="text/css" href="/css/reading.css">
-    <title>Home - Sam Ireland</title>
+    <title>Reviews - Sam Ireland</title>
   </head>
 
   <body>

@@ -9,12 +9,12 @@ articles = []
 os.chdir("%s%sSource%sarticles" % (current_dir, os.path.sep, os.path.sep))
 for article in [f for f in os.listdir(".") if "~" not in f]:
     f = open(article)
-    articles.append([l for l in f.readlines() if l.rstrip()])
+    articles.append([l.replace("\x00","") for l in f.readlines() if l.rstrip()])
     f.close()
 
 
 #Process the articles
-chars = "abcdefghijklmnopqrstuvwxyz "
+chars = "abcdefghijklmnopqrstuvwxyz0123456789 "
 articles = [{
     "url": "".join([char for char in article[1].rstrip().lower() if char in chars]).replace(" ", "-"),
     "date": "-".join([article[0][:4], article[0][4:6], article[0][6:]]).rstrip(),

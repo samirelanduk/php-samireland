@@ -6,7 +6,7 @@
   <head>
     <?php require $root . "/includes/head.html" ?>
     <link rel="stylesheet" type="text/css" href="/css/reading.css">
-    <title>Home - Sam Ireland</title>
+    <title>Reading - Sam Ireland</title>
   </head>
 
   <body>
@@ -24,9 +24,9 @@
 			</div>
 			<div class="medium">
 				<h2>What I'm listening to</h2>
-				<h3 class="title"><a target="_blank" href="http://www.audible.co.uk/pd/Non-fiction/Superintelligence-Audiobook/B00LPMA33G">Superintelligence: Paths, Dangers, Strategies</a></h3>
-				<h3 class="author">Nick Bostrum</h3>
-				<p>A cheerfull little warning about the unavoidable and dystopian doom that awaits us all once we create machines that are more intelligent that we are.</p>
+				<h3 class="title"><a target="_blank" href="http://www.audible.co.uk/pd/Biographies-Memoirs/David-Mitchell-Back-Story-Audiobook/B009OMF49M">David Mitchell: Back Story</a></h3>
+				<h3 class="author">David Mitchell</h3>
+				<p>I don't read a lot of autobiographies, but I am a big fan of David Mitchell. When I saw this was narrated by the man himself, it went straight to the top of my list.</p>
 			</div>
 			<h2><a href="reviews/">My reviews</a></h2>
 		</main>

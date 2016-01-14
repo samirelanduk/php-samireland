@@ -13,7 +13,7 @@
 <html>
   <head>
     <?php require $root . "/includes/head.html" ?>
-    <title>Home - Sam Ireland</title>
+    <title>Sam Ireland</title>
   </head>
 
   <body>

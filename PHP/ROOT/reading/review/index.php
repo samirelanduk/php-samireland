@@ -13,7 +13,7 @@
 <html>
   <head>
     <?php require $root . "/includes/head.html" ?>
-    <title>Home - Sam Ireland</title>
+    <title>Review - Sam Ireland</title>
     <link rel="stylesheet" type="text/css" href="/css/reading.css">
   </head>
 

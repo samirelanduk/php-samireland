@@ -6,3 +6,5 @@ Source/blog/*~
 .gitignore~
 Source/articles/*~
 .DS_Store
+*.docx
+./Design

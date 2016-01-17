@@ -24,9 +24,9 @@
 			</div>
 			<div class="medium">
 				<h2>What I'm listening to</h2>
-				<h3 class="title"><a target="_blank" href="http://www.audible.co.uk/pd/Biographies-Memoirs/David-Mitchell-Back-Story-Audiobook/B009OMF49M">David Mitchell: Back Story</a></h3>
-				<h3 class="author">David Mitchell</h3>
-				<p>I don't read a lot of autobiographies, but I am a big fan of David Mitchell. When I saw this was narrated by the man himself, it went straight to the top of my list.</p>
+				<h3 class="title"><a target="_blank" href="http://www.audible.co.uk/pd/History/Hitler-Audiobook/B017HZAUJG">Hitler: A Biography</a></h3>
+				<h3 class="author">Ian Kershaw</h3>
+				<p>A pretty intimidating tome on Adolf Hitler. Maybe you've heard of him?</p>
 			</div>
 			<h2><a href="reviews/">My reviews</a></h2>
 		</main>

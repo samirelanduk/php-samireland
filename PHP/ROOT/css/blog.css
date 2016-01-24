@@ -1,0 +1,26 @@
+.blogindent, .blogpost {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.blogpost {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 20px 30px 10px 30px;
+  border-radius: 25px;
+  background-color: #BDEDE6;
+}
+
+.blogpost .title {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+.blogpost .date {
+  font-style: italic;
+  color: #900;
+}
+
+.blogpost p {
+  font-size: 85%;
+}

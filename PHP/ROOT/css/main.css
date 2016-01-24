@@ -52,9 +52,24 @@ main {
 }
 
 footer {
-  margin: 30px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
 	padding: 0px 0px 20px 0px;
 	text-align: center;
+}
+
+footer hr {
+  width: 25%;
+  margin-bottom: 25px;
+}
+
+footer img {
+  opacity: 0.5;
+	transition: 0.3s;
+
+}
+
+footer img:hover {
+  opacity: 1;
 }
 
 /*End of deafult stuff*/
@@ -84,27 +99,6 @@ a:hover {
 
 blockquote, q {
 	font-style: italic;
-}
-
-.blogpost {
-  margin: 0px 100px 20px 100px;
-  padding: 20px 30px 10px 30px;
-  border-radius: 25px;
-  background-color: #BDEDE6;
-}
-
-.blogpost .title {
-  font-size: 110%;
-  font-weight: bold;
-}
-
-.blogpost .date {
-  font-style: italic;
-  color: #900;
-}
-
-.blogpost p {
-  font-size: 85%;
 }
 
 .article_link {

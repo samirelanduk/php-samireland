@@ -5,6 +5,7 @@
 <html>
   <head>
     <?php require $root . "/includes/head.html" ?>
+    <link rel="stylesheet" type="text/css" href="/css/blog.css">
     <title>Blog - Sam Ireland</title>
   </head>
 
@@ -13,7 +14,7 @@
     <?php require $root . "/includes/nav.html" ?>
 
     <main>
-      <h1>Blog</h1>
+      <h1 class="blogindent">Blog</h1>
 
       <?php
         require $root . "/params.php";

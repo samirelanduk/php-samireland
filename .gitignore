@@ -9,3 +9,5 @@ Source/articles/*~
 *.docx
 ./Design
 *.sqlite3
+*.pyc
+__pycache__/

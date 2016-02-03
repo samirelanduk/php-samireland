@@ -8,3 +8,4 @@ Source/articles/*~
 .DS_Store
 *.docx
 ./Design
+*.sqlite3

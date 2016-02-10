@@ -5,7 +5,7 @@
 <html>
   <head>
     <?php require $root . "/includes/head.html" ?>
-    <title>Home - Sam Ireland</title>
+    <title>Musical Note Practice - Sam Ireland</title>
     <style>
       table {
         width: 90%;
@@ -24,6 +24,47 @@
         font-size: 96px;
       }
     </style>
+    <script>
+    var timer;
+
+      function runTest() {
+        changeSymbol();
+        var duration = parseInt(document.getElementById("duration").value);
+
+        if (isNaN(duration)) {
+          return false;
+        }
+
+        timer = setInterval(changeSymbol, duration * 1000);
+      }
+
+      function changeSymbol() {
+        var notes = [
+          ["A", "B", "C", "D", "E", "F", "G"],
+          ["test1", "test2", "test3"],
+          ["a", "b", "c", "d", "e", "f", "g"]
+        ];
+        var symbols = [];
+        if (document.getElementById("notes").checked) {
+          symbols = notes[0];
+        } else if (document.getElementById("blacks").checked) {
+          symbols = notes[1];
+        } else if (document.getElementById("chords").checked) {
+          symbols = notes[2];
+        } else {
+          symbols = notes[1];
+        }
+
+        var sound = document.getElementById("sound");
+        sound.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+      }
+
+      function stop() {
+        clearInterval(timer);
+        var sound = document.getElementById("sound");
+        sound.innerHTML = "";
+      }
+    </script>
   </head>
 
   <body>
@@ -38,13 +79,12 @@
             <input type="radio" name="sounds" id="notes" checked="checked"><label for="notes">Notes</label><br>
             <input type="radio" name="sounds" id="blacks"><label for="blacks">Notes (black)</label><br>
             <input type="radio" name="sounds" id="chords"><label for="chords">Chords</label><br>
-            Number: <input type="text" autocomplete="off" size="3"><br>
-            Duration (sec): <input type="text" autocomplete="off" size="3"><br>
-            <input type="submit" value="Start">
-            <input type="submit" value="Stop">
+            Duration (sec): <input type="text" autocomplete="off" size="3" id="duration" value="2"><br>
+            <input type="submit" value="Start" onclick="runTest()">
+            <input type="submit" value="Stop" onclick="stop()">
           </td>
             <td id="sound">
-              A
+
             </td>
         </tr>
       </table>

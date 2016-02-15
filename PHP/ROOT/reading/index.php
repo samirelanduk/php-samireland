@@ -18,9 +18,9 @@
 			<p>Here you will find the book, and the audiobook I'm currently working my way through. When finished, I usually write a short review - these can be found via the link at the bottom of this page.</p>
       <div class="medium">
 				<h2>What I'm reading</h2>
-				<h3 class="title"><a target="_blank" href="http://www.amazon.co.uk/The-Last-Empire-Final-Soviet/dp/0465046711">The Last Empire: The Final Days of the Soviet Union</a></h3>
-				<h3 class="author">Serhii Plokhy</h3>
-				<p>A topical subject, and one of the most important events of the 20<sup>th</sup> Century.</p>
+				<h3 class="title"><a target="_blank" href="http://www.amazon.co.uk/Britain-Brink-Dangerous-Weekend-October/dp/1848848145">Britain on the Brink: The Cold War's Most Dangerous Weekend, 27-28 October 1962</a></h3>
+				<h3 class="author">Jim Wilson</h3>
+				<p>My favourite Historical event, told from a British perspecitve.</p>
 			</div>
 			<div class="medium">
 				<h2>What I'm listening to</h2>
